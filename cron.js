@@ -2,7 +2,7 @@
 const cron = require('cron');
 const https = require('https');
 
-const backendUrl = 'provide_backend_api_endpoint_that_is_provided_by_vendor';
+const backendUrl = 'https://synthome-fyi.onrender.com/papers';
 const job = new cron.CronJob('*/14 * * * * *', function () {
     // This function will be executed every 14 seconds
     console.log('Restarting server');
